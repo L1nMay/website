@@ -1,0 +1,20 @@
+--2025-05-10 22:06:36--  https://cdn1-www.bureauveritas.pl/sites/g/files/zypfnx301/files/2019-07/ISO-27001.jpg/cyber-sec.jpg
+Resolving cdn1-www.bureauveritas.pl (cdn1-www.bureauveritas.pl)... 52.85.49.7, 52.85.49.75, 52.85.49.5, ...
+Connecting to cdn1-www.bureauveritas.pl (cdn1-www.bureauveritas.pl)|52.85.49.7|:443... connected.
+HTTP request sent, awaiting response... 404 Not Found
+2025-05-10 22:06:36 ERROR 404: Not Found.
+
+--2025-05-10 22:06:36--  https://avatars.mds.yandex.net/i?id=2c6589240bfa6568e5790dcfd050c43d_l-4798081-images-thumbs
+Resolving avatars.mds.yandex.net (avatars.mds.yandex.net)... 87.250.247.182, 87.250.247.183, 87.250.247.181, ...
+Connecting to avatars.mds.yandex.net (avatars.mds.yandex.net)|87.250.247.182|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6646 (6.5K) [image/jpeg]
+Saving to: ‘/mnt/d/my-portfolio/src/img/i?id=2c6589240bfa6568e5790dcfd050c43d_l-4798081-images-thumbs’
+
+i?id=2c6589240bfa6568e5790dcfd050c43d_l-4798081-images-thum   0%[                                                                                                                                         ]       0  --.-KB/s               i?id=2c6589240bfa6568e5790dcfd050c43d_l-4798081-images-thum 100%[========================================================================================================================================>]   6.49K  --.-KB/s    in 0s      
+
+2025-05-10 22:06:37 (21.2 MB/s) - ‘/mnt/d/my-portfolio/src/img/i?id=2c6589240bfa6568e5790dcfd050c43d_l-4798081-images-thumbs’ saved [6646/6646]
+
+FINISHED --2025-05-10 22:06:37--
+Total wall clock time: 0.6s
+Downloaded: 1 files, 6.5K in 0s (21.2 MB/s)
