@@ -5,12 +5,30 @@ on:
     tags:
       - 'v*'
 
+permissions:
+  contents: write  # Необходимо для создания релизов
+
 jobs:
-  build:
+  create-release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - run: zip -r website.zip .
-      - uses: softprops/action-gh-release@v1
+      - name: Checkout code
+        uses: actions/checkout@v3
         with:
-          files: website.zip
+          fetch-depth: 0  # Для получения истории тегов
+
+      - name: Create ZIP archive
+        run: |
+          # Исключаем ненужные файлы
+          zip -r website.zip . \
+            -x '*.git*' '*node_modules*' '*.env*'
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            website.zip
+          generate_release_notes: true
+          draft: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
