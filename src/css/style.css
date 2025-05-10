@@ -195,3 +195,149 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* Основные стили */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Стили для страниц услуг */
+.service-detail {
+    padding: 3rem 0;
+}
+
+.service-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.service-content img {
+    width: 50%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.back-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.tech-icons {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.tech-icons span {
+    background: var(--light-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .service-content {
+        flex-direction: column;
+    }
+    .service-content img {
+        width: 100%;
+    }
+}
+/* Дополнительные стили для страниц услуг */
+.service-text h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.service-text h3 {
+    margin: 1.5rem 0 0.8rem;
+    color: var(--secondary-color);
+}
+
+.cases {
+    margin-top: 2rem;
+}
+
+.case-item {
+    background: var(--light-color);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.case-item h4 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+.contact-section {
+    background: var(--light-color);
+    padding: 3rem 0;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.contact-form button {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: var(--primary-color);
+}
+
+.footer-links {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
